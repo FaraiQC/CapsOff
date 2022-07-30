@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const MaterialApp(home: Admin()));
-
 class GroupSelection extends StatefulWidget {
   const GroupSelection({Key? key}) : super(key: key);
 
