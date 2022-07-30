@@ -26,5 +26,19 @@ namespace STEM.Controllers
             var users = userService.GetAllUsers();
             return Ok(users);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetUserById(Guid id)
+        {
+            var user = userService.GetUserById(id);
+            return Ok(user);
+        }
+
+        [HttpPost]
+        public IActionResult RegisterUser(User user)
+        {
+            var userId = userService.RegisterUser(user);
+            return Ok(userId);
+        }
     }
 }
