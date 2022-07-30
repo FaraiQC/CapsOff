@@ -1,0 +1,6 @@
+{
+  "appTitle": "stem_wiz",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
