@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-void main() => runApp(const MaterialApp(home: Admin()));
+import '../quiz/quiz.dart';
 
 class GroupSelection extends StatefulWidget {
   const GroupSelection({Key? key}) : super(key: key);
@@ -224,10 +223,10 @@ class Admin extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const ___),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Quiz()),
+              );
             },
             child: Container(
               decoration: BoxDecoration(

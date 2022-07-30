@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../group_selection/group_selection.dart';
 
-void main() => runApp(const MaterialApp(home: Admin()));
-
 class ConceptSelection extends StatefulWidget {
   const ConceptSelection({Key? key}) : super(key: key);
 
