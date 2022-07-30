@@ -47,35 +47,39 @@ class QuestionWidgetState extends State<QuestionWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          const SizedBox(
-            height: 32,
-          ),
-          Text('Question $questionNumber/${questions.length}'),
-          const Divider(
-            thickness: 1,
-            color: Colors.grey,
-          ),
-          Expanded(
-            child: PageView.builder(
-              itemBuilder: (context, index) {
-                final question = questions[index];
-                return buildQuestion(question);
-              },
-              itemCount: questions.length,
-              controller: _controller,
-              physics: const NeverScrollableScrollPhysics(),
+    return SizedBox(
+      width: 400,
+      height: 700,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            const SizedBox(
+              height: 32,
             ),
-          ),
-          _isLocked ? buildElevatedButton() : const SizedBox.shrink(),
-          const SizedBox(
-            height: 20,
-          )
-        ],
+            Text('Question $questionNumber/${questions.length}'),
+            const Divider(
+              thickness: 1,
+              color: Colors.grey,
+            ),
+            Expanded(
+              child: PageView.builder(
+                itemBuilder: (context, index) {
+                  final question = questions[index];
+                  return buildQuestion(question);
+                },
+                itemCount: questions.length,
+                controller: _controller,
+                physics: const NeverScrollableScrollPhysics(),
+              ),
+            ),
+            _isLocked ? buildElevatedButton() : const SizedBox.shrink(),
+            const SizedBox(
+              height: 20,
+            )
+          ],
+        ),
       ),
     );
   }
