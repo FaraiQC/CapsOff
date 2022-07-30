@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace STEM.Models
 {
@@ -15,13 +16,17 @@ namespace STEM.Models
         public Guid UserId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string Email { get; set; }
         public int Grade { get; set; }
         public Guid? SchoolId { get; set; }
         public Guid? UserTypeId { get; set; }
         public string Password { get; set; }
 
+        [JsonIgnore]
         public virtual School School { get; set; }
+        [JsonIgnore]
         public virtual UserType UserType { get; set; }
+        [JsonIgnore]
         public virtual ICollection<UserSubject> UserSubject { get; set; }
     }
 }

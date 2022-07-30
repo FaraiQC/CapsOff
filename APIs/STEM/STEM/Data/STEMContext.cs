@@ -77,6 +77,11 @@ namespace STEM.Data
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.HasOne(d => d.School)
                     .WithMany(p => p.User)
                     .HasForeignKey(d => d.SchoolId)
