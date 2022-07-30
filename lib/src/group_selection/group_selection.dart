@@ -17,7 +17,7 @@ class GroupSelectionState extends State<GroupSelection> {
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
-          chatAppbarWidget(MediaQuery.of(context).size, context, "Mathematics"),
+          appbarWidget(MediaQuery.of(context).size, context, "Mathematics"),
           const SizedBox(
             height: 20,
           ),
@@ -313,7 +313,7 @@ class Admin extends StatelessWidget {
   }
 }
 
-Widget chatAppbarWidget(Size size, BuildContext context, String groupName) {
+Widget appbarWidget(Size size, BuildContext context, String groupName) {
   return Container(
     padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top + 6),
     width: size.width,
