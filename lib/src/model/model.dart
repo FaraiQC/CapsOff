@@ -1,14 +1,14 @@
 class Question {
   final String text;
   final List<Option> options;
-  String? explanation;
+  String explanation;
   bool isLocked;
   Option? selectedOption;
 
   Question({
     required this.text,
     required this.options,
-    this.explanation,
+    required this.explanation,
     this.isLocked = false,
     this.selectedOption,
   });

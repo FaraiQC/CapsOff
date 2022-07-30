@@ -47,9 +47,11 @@ class QuestionWidgetState extends State<QuestionWidget> {
 
   @override
   Widget build(BuildContext context) {
+    double widthOfScreen = MediaQuery.of(context).size.width;
+    double heightOfScreen = MediaQuery.of(context).size.height;
     return SizedBox(
-      width: 400,
-      height: 700,
+      width: widthOfScreen,
+      height: heightOfScreen,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
@@ -108,6 +110,16 @@ class QuestionWidgetState extends State<QuestionWidget> {
               _isLocked = question.isLocked;
               if (question.selectedOption!.isCorrect) {
                 _score++;
+              } else {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text("Explanation"),
+                      content: Text(question.explanation),
+                    );
+                  },
+                );
               }
             }
           },
