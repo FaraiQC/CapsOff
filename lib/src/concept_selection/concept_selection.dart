@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../group_selection/group_selection.dart';
 
 void main() => runApp(const MaterialApp(home: Admin()));
 
-class GroupSelection extends StatefulWidget {
-  const GroupSelection({Key? key}) : super(key: key);
+class ConceptSelection extends StatefulWidget {
+  const ConceptSelection({Key? key}) : super(key: key);
 
   @override
-  GroupSelectionState createState() => GroupSelectionState();
+  ConceptSelectionState createState() => ConceptSelectionState();
 }
 
-class GroupSelectionState extends State<GroupSelection> {
+class ConceptSelectionState extends State<ConceptSelection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
-          appbarWidget(MediaQuery.of(context).size, context, "Mathematics"),
+          appbarWidget(MediaQuery.of(context).size, context, "Quiz"),
           const SizedBox(
             height: 20,
           ),
@@ -51,10 +52,10 @@ class Admin extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const ____),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const GroupSelection()),
+              );
             },
             child: Container(
               decoration: BoxDecoration(
@@ -64,14 +65,14 @@ class Admin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    "assets/Pictures/trigonometry.png",
+                    "assets/Pictures/mathematics.png",
                     width: 42,
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   Text(
-                    "Trigonometry",
+                    "Mathematics",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -79,7 +80,7 @@ class Admin extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "20 Questions",
+                    "6 Items",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white70,
@@ -105,14 +106,14 @@ class Admin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    "assets/Pictures/geometry.png",
+                    "assets/Pictures/physics.png",
                     width: 42,
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   Text(
-                    "Geometry",
+                    "Physics",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -120,51 +121,7 @@ class Admin extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "20 Questions",
-                    style: GoogleFonts.openSans(
-                        textStyle: const TextStyle(
-                            color: Colors.white70,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w600)),
-                  ),
-                  const SizedBox(
-                    height: 8,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const ___),
-              // );
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.circular(10)),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Image.asset(
-                    "assets/Pictures/calculus.png",
-                    width: 42,
-                  ),
-                  const SizedBox(
-                    height: 14,
-                  ),
-                  Text(
-                    "Calculus",
-                    style: GoogleFonts.openSans(
-                        textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600)),
-                  ),
-                  Text(
-                    "20 Questions",
+                    "6 Items",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white70,
@@ -193,14 +150,14 @@ class Admin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    "assets/Pictures/statistics.png",
+                    "assets/Pictures/chemistry.png",
                     width: 42,
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   Text(
-                    "Statistics",
+                    "Chemistry",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -208,7 +165,7 @@ class Admin extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "20 Questions",
+                    "6 Items",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white70,
@@ -237,14 +194,14 @@ class Admin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    "assets/Pictures/probability.png",
+                    "assets/Pictures/IT.png",
                     width: 42,
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   Text(
-                    "Probability",
+                    "IT",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -252,7 +209,51 @@ class Admin extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "20 Questions",
+                    "6 Items",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(builder: (context) => const ___),
+              // );
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(10)),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    "assets/Pictures/biology.png",
+                    width: 42,
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
+                  Text(
+                    "Biology",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  Text(
+                    "6 Items",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white70,
@@ -278,14 +279,14 @@ class Admin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    "assets/Pictures/finance.png",
+                    "assets/Pictures/engineering.png",
                     width: 42,
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   Text(
-                    "Finantial Maths",
+                    "Engineering",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -293,7 +294,89 @@ class Admin extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "20 Questions",
+                    "6 Items",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              //print("Container clicked");
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(10)),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    "assets/Pictures/psychology.png",
+                    width: 42,
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
+                  Text(
+                    "Psychology",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  Text(
+                    "6 Items",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              //print("Container clicked");
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(10)),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    "assets/Pictures/astronomy.png",
+                    width: 42,
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
+                  Text(
+                    "Astronomy",
+                    style: GoogleFonts.openSans(
+                        textStyle: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600)),
+                  ),
+                  Text(
+                    "6 Items",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white70,
