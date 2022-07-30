@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IUserTypeService, UserTypeServices>();
 builder.Services.AddScoped<IUserService, UserServices>();
+builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationServices>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

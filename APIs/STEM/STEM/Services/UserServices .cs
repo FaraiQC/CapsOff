@@ -34,9 +34,9 @@ namespace STEM.Services
         }
         public Guid RegisterUser(User user)
         {
-            if (_context.User.Where(e => e.Email == user.Email).Any())
+            if (_context.User.Where(e => e.MobileNo == user.Email || e.MobileNo == user.MobileNo).Any())
             {
-                throw new KeyNotFoundException("The User with this email already exists");
+                throw new KeyNotFoundException("This User already exists, Please log in");
             }
             //User.Password = BCrypt.Net.BCrypt.HashPassword(User.Password, "ThisWillBeAGoodPlatformForBothUsersAndTuteesToConnectOnADailyBa5e5");
             user.UserId = Guid.NewGuid();

@@ -17,6 +17,7 @@ namespace STEM.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
+        public string MobileNo { get; set; }
         public int Grade { get; set; }
         public Guid? SchoolId { get; set; }
         public Guid? UserTypeId { get; set; }
