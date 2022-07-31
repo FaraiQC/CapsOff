@@ -190,3 +190,13 @@ body{
  position: relative;
  width: 80%;
 }
+
+.col-lg-6{
+  background-color: rgba(46, 57, 114, 0.9);
+  color: white;
+}
+
+.col-lg-6, .col-sm-6, .col-sm-2{
+  justify-content: center;
+  text-align: center;
+}
