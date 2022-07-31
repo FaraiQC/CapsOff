@@ -135,3 +135,68 @@ body{
       .bookSystemSectionBlocks{
         margin-left: 8%;
       }
+
+  .container-fluid{
+    width: 100%;
+  }
+  .col{
+    
+    box-shadow: white;
+    background-color: rgba(46, 57, 114, 0.9);
+    width: 25px;
+    height: 250;
+    margin-top: 4%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        
+  }
+  .top{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bolder;
+  }
+
+  @media only screen and (min-width: 768px) {
+    iframe{
+      height: 18em;
+    }
+    .card{
+      width: 100%;
+    }
+  }
+
+  .card{
+    text-align: center;
+  }
+
+  
+.col-md-6{
+  background-color: rgba(0, 194, 43, 0.88);
+  color: white;
+  text-align: center;
+}
+
+#uni{
+ justify-content: center;
+ position: relative;
+ width: 80%;
+}
+
+.col-lg-6{
+  background-color: rgba(46, 57, 114, 0.9);
+  color: white;
+}
+
+.col-lg-6, .col-sm-6, .col-sm-2{
+  justify-content: center;
+  text-align: center;
+}
