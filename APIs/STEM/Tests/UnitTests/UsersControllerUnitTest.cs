@@ -82,58 +82,87 @@ namespace Tests.UnitTests;
 
         }
         
-        // [Fact]
-        // public async Task GetUserById_UserId_ReturnsUserOfId()
-        // {
-        //     //arrange
-        //     var user = new User
-        //     {
-        //         UserId =new Guid(),
-        //         Name = "Simphiwe",
-        //         Surname = "Ndlovu",
-        //         Email = "simphiwendlovu527@gmail.com",
-        //         Grade = 12,
-        //         Password = "12345678"
-        //     };
-        //
-        //     _userRepositoryMock.Setup(u => u.GetUserById(It.IsAny<Guid>())).Returns(user);
-        //
-        //     var controller = new UsersController(_userRepositoryMock.Object,_mapper.Object);
-        //
-        //     //act
-        //     var result = controller.GetAllUsers();
-        //
-        //     Assert.NotNull(result);
-        //     Assert.IsType<OkObjectResult>(result);
-        //
-        //     var actual = (result as OkObjectResult).Value;
-        //     Assert.IsType<User>(actual);
-        // }
+        [Fact]
+        public async Task GetUserById_UserId_ReturnsUserOfId()
+        {
+            //arrange
+            var user = new User
+            {
+                UserId =new Guid(),
+                Name = "Simphiwe",
+                Surname = "Ndlovu",
+                Email = "simphiwendlovu527@gmail.com",
+                Grade = 12,
+                Password = "12345678"
+            };
         
-        // [Fact]
-        // public async Task AddUser_User_ReturnsUser()
-        // {
-        //     //arrange
-        //     var user = new User
-        //     {
-        //         UserId =new Guid(),
-        //         Name = "Simphiwe",
-        //         Surname = "Ndlovu",
-        //         Email = "simphiwendlovu527@gmail.com",
-        //         Grade = 12,
-        //         Password = "12345678"
-        //     };
-        //     _userRepositoryMock.Setup(u => u.RegisterUser(It.IsAny<User>())).Returns(user);
-        //
-        //     var controller = new UsersController(_userRepositoryMock.Object,_mapper.Object);
-        //
-        //     //act
-        //     var result = await controller.(user);
-        //
-        //     Assert.NotNull(result);
-        //     Assert.IsType<OkObjectResult>(result.Result);
-        //
-        //     var actual = (result.Result as OkObjectResult).Value;
-        //     Assert.IsType<User>(actual);
-        // }
+            _userRepositoryMock.Setup(u => u.GetUserById(It.IsAny<Guid>())).Returns(user);
+        
+            var controller = new UsersController(_userRepositoryMock.Object,_mapper.Object);
+        
+            //act
+            var result = controller.GetUserById(user.UserId);
+        
+            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
+
+            var actual = (result as OkObjectResult).Value;
+            Assert.IsType<User>(actual);
+        }
+        
+        [Fact]
+        public async Task AddUser_User_ReturnsUser()
+        {
+            //arrange
+            var user = new User
+            {
+                UserId =new Guid(),
+                Name = "Simphiwe",
+                Surname = "Ndlovu",
+                Email = "simphiwendlovu527@gmail.com",
+                Grade = 12,
+                Password = "12345678"
+            };
+            _userRepositoryMock.Setup(u => u. RegisterUser(It.IsAny<User>())).Returns(user.UserId);
+        
+            var controller = new UsersController(_userRepositoryMock.Object,_mapper.Object);
+        
+            //act
+            var result =  controller.RegisterUser(user);
+        
+            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
+        
+            var actual = (result as OkObjectResult).Value;
+            Assert.IsType<System.Guid>(actual);
+        }
+        
+        [Fact]
+        public async Task UpdateUser_User_ReturnsUser()
+        {
+            //arrange
+            var user = new User
+            {
+                UserId =new Guid(),
+                Name = "Simphiwe",
+                Surname = "Ndlovu",
+                Email = "simphiwendlovu527@gmail.com",
+                Grade = 12,
+                Password = "12345678"
+            };
+
+            _userRepositoryMock.Setup(u => u.UpdateUser(It.IsAny<User>())).Returns(user);
+
+            var controller = new UsersController(_userRepositoryMock.Object,_mapper.Object);
+
+            //act
+            var result =  controller.UpdateUser(user.UserId,user);
+
+            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
+
+            var actual = (result as OkObjectResult).Value;
+            Assert.IsType<User>(actual);
+        }
+        
     }
