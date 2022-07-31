@@ -1,0 +1,202 @@
+body{
+    background-image: url('./img/pencils.jpg');
+    background-size: cover;
+}
+ 
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    /* margin-top: 5%; */
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 1%;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    color: #000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #071d3d;
+    color: white;
+  }
+  
+  .topnav a.active {
+    
+    color: #FFB800;
+
+  }
+
+  #logo-name
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #logoSize{
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  #navName{
+    float: left;
+    color: #2E3972;
+    text-align: center;
+    text-decoration: none;
+
+    }
+
+    #topInfor{
+        flex-direction: row;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconProfile{
+        color: #fff;
+       size: 20px;
+    }
+
+    .userName{
+        padding-left: 1%;
+        font-weight: bolder;
+        font-size: larger;
+        color: #fff;
+    }
+
+    .points{
+        margin-left: auto;
+        color: #fff;
+        /* margin-right: 2%; */
+        flex-direction: row;
+        display: flex;
+
+    }
+    .pointsText{
+        font-size: 18px;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconCrown{
+        color: #FFB800;
+       
+    }
+
+    .blocks{
+        float: left;
+        background-color: rgba(46, 57, 114, 0.9);
+        
+        width: 20%;
+        height: 150px;
+        margin-top: 4%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .blockHeading{
+      align-items: center;
+      align-self: center;
+      text-align: center;
+      height: 100%;
+    }
+    
+    .invoiceIcon{
+        /* width: 100px;
+        height: 100px; */
+        /* margin: auto; */
+        /* font-size: f; */
+        margin-top: 14%;
+        color:#FFB800;
+      }
+
+      .bookSystemSectionBlocks{
+        margin-left: 8%;
+      }
+
+  .container-fluid{
+    width: 100%;
+  }
+  .col{
+    
+    box-shadow: white;
+    background-color: rgba(46, 57, 114, 0.9);
+    width: 25px;
+    height: 250;
+    margin-top: 4%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        
+  }
+  .top{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bolder;
+  }
+
+  @media only screen and (min-width: 768px) {
+    iframe{
+      height: 18em;
+    }
+    .card{
+      width: 100%;
+    }
+  }
+
+  .card{
+    text-align: center;
+  }
+
+  
+.col-md-6{
+  background-color: rgba(0, 194, 43, 0.88);
+  color: white;
+  text-align: center;
+}
+
+#uni{
+ justify-content: center;
+ position: relative;
+ width: 80%;
+}
+
+.col-lg-6{
+  background-color: rgba(46, 57, 114, 0.9);
+  color: white;
+}
+
+.col-lg-6, .col-sm-6, .col-sm-2{
+  justify-content: center;
+  text-align: center;
+}

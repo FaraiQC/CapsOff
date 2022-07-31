@@ -1,0 +1,163 @@
+body{
+    background-image: url('../../img/pencils.jpg');
+    background-size: cover;
+}
+ 
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    /* margin-top: 5%; */
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 1%;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    color: #000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #071d3d;
+    color: white;
+  }
+  
+  .topnav a.active {
+    
+    color: #FFB800;
+
+  }
+
+  #logo-name
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #logoSize{
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  #navName{
+    float: left;
+    color: #2E3972;
+    text-align: center;
+    text-decoration: none;
+
+    }
+
+    #topInfor{
+        flex-direction: row;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconProfile{
+        color: #fff;
+       size: 20px;
+    }
+
+    .userName{
+        padding-left: 1%;
+        font-weight: bolder;
+        font-size: larger;
+        color: #fff;
+    }
+
+    .points{
+        margin-left: auto;
+        color: #fff;
+        /* margin-right: 2%; */
+        flex-direction: row;
+        display: flex;
+
+    }
+    .pointsText{
+        font-size: 18px;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconCrown{
+        color: #FFB800;
+       
+    }
+
+    .quizMessageBox{
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .quizMessage{
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .quizBlocks{
+        width: 100%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quizBlock{
+        background-color: #2E3972;
+        margin-top: 3%;
+        width: 60%;
+        height: 100px;
+        border-radius:  1%;
+        padding: 1%;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+     
+    }
+
+    .quizBlockTitles{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 4%;
+    }
+
+    .verticalYellowDivider{
+        margin-left: 18%;
+        color: #FFB800;
+        border-right: 2px #FFB800 solid ;
+    }
+
+    .verticalYellowDividerr{
+        margin-left: 15%;
+        color: #FFB800;
+        border-right: 2px #FFB800 solid ;
+    }
+
+    .quizDetails{
+        margin-top: 5%;
+        font-size: 24px;
+        color: rgb(214, 214, 214);
+        margin-left: 5%;
+        vertical-align: middle;
+
+    }
+
+    .quizLink{
+        color: white;
+    }

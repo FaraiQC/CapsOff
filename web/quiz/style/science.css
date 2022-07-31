@@ -1,0 +1,152 @@
+body{
+    background-image: url('../../img/pencils.jpg');
+    background-size: cover;
+}
+ 
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    /* margin-top: 5%; */
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 1%;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    color: #000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #071d3d;
+    color: white;
+  }
+  
+  .topnav a.active {
+    
+    color: #FFB800;
+
+  }
+
+  #logo-name
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #logoSize{
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  #navName{
+    float: left;
+    color: #2E3972;
+    text-align: center;
+    text-decoration: none;
+
+    }
+
+    #topInfor{
+        flex-direction: row;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconProfile{
+        color: #fff;
+       size: 20px;
+    }
+
+    .userName{
+        padding-left: 1%;
+        font-weight: bolder;
+        font-size: larger;
+        color: #fff;
+    }
+
+    .points{
+        margin-left: auto;
+        color: #fff;
+        /* margin-right: 2%; */
+        flex-direction: row;
+        display: flex;
+
+    }
+    .pointsText{
+        font-size: 18px;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconCrown{
+        color: #FFB800;
+       
+    }
+
+    .blocks{
+        float: left;
+        background-color: rgba(46, 57, 114, 0.9);
+        
+        width: 20%;
+        height: 150px;
+        margin-top: 4%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .blockHeading{
+      align-items: center;
+      align-self: center;
+      text-align: center;
+      justify-content: center;
+      margin-top: 25%;
+      height: 100%;
+    }
+    
+    .invoiceIcon{
+        /* width: 100px;
+        height: 100px; */
+        /* margin: auto; */
+        /* font-size: f; */
+        margin-top: 14%;
+        color:#FFB800;
+      }
+
+      .bookSystemSectionBlocks{
+        margin-left: 8%;
+      }
+
+  
+      .pageHeadingBox{
+        margin-top: 2%;
+        color: #fff;
+      }
+
+      .pageHeading{
+        font-weight: bold;
+        font-size: 40px;
+        margin-left: 13%;
+      }
