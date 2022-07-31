@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-void main() => runApp(const MaterialApp(home: Admin()));
+import '../quiz/quiz.dart';
 
 class GroupSelection extends StatefulWidget {
   const GroupSelection({Key? key}) : super(key: key);
@@ -34,16 +33,16 @@ class Admin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double widthOfScreen = MediaQuery.of(context).size.width;
-    int crossAxis = 1;
+    int crossAxis = 2;
     if (widthOfScreen < 400.0) {
-      crossAxis = 1;
+      crossAxis = 2;
     } else {
       crossAxis = 3;
     }
 
     return Flexible(
       child: GridView.count(
-        childAspectRatio: 2.9,
+        childAspectRatio: 1.0,
         padding: const EdgeInsets.only(left: 16, right: 16),
         crossAxisCount: crossAxis,
         crossAxisSpacing: 18,
@@ -224,10 +223,10 @@ class Admin extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const ___),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Quiz()),
+              );
             },
             child: Container(
               decoration: BoxDecoration(
@@ -285,7 +284,7 @@ class Admin extends StatelessWidget {
                     height: 14,
                   ),
                   Text(
-                    "Finantial Mathematics",
+                    "Finantial Maths",
                     style: GoogleFonts.openSans(
                         textStyle: const TextStyle(
                             color: Colors.white,
