@@ -1,0 +1,146 @@
+body{
+    background-image: url('../../img/pencils.jpg');
+    background-size: cover;
+}
+ 
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    /* margin-top: 5%; */
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 1%;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    color: #000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #071d3d;
+    color: white;
+  }
+  
+  .topnav a.active {
+    
+    color: #FFB800;
+
+  }
+
+  #logo-name
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #logoSize{
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  #navName{
+    float: left;
+    color: #2E3972;
+    text-align: center;
+    text-decoration: none;
+
+    }
+
+    #topInfor{
+        flex-direction: row;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconProfile{
+        color: #fff;
+       size: 20px;
+    }
+
+    .userName{
+        padding-left: 1%;
+        font-weight: bolder;
+        font-size: larger;
+        color: #fff;
+    }
+
+    .points{
+        margin-left: auto;
+        color: #fff;
+        /* margin-right: 2%; */
+        flex-direction: row;
+        display: flex;
+
+    }
+    .pointsText{
+        font-size: 18px;
+        margin-top: 1%;
+        margin-left: 0.4%;
+    }
+
+    .topIconCrown{
+        color: #FFB800;
+       
+    }
+
+    .quizTab{
+        width: 70%;
+        background-color: #2E3972;
+        align-items: center;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 14%;
+        padding-top: 2%;
+    }
+
+    .form{
+        width: 65%;
+        height:180px;
+        background-color: #2E3972;
+        margin-left: 14%;
+        padding-top: 2%;
+        padding-left: 5%;
+        font-size: 20px;
+        color: #fff;
+    }
+
+
+    .pageHeadingBox{
+        width: 100%;
+        
+      }
+
+      .pageHeading{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        margin-left: 8%;
+        margin-bottom: -1%;
+      }
+
+    .imgQuestion{
+        width: 40%;
+    }
+
+    .submit{
+        margin-left: 45%;
+        height: 40px;
+        width: 120px;
+        border-radius: 5%;
+        background-color: #FFB800;
+        font-weight: bold;
+    }
