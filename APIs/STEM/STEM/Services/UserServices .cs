@@ -1,4 +1,5 @@
-﻿using STEM.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using STEM.Data;
 using STEM.Models;
 
 namespace STEM.Services
@@ -8,6 +9,8 @@ namespace STEM.Services
         IEnumerable<User> GetAllUsers();
         User GetUserById(Guid id);
         Guid RegisterUser(User user);
+
+        User UpdateUser(User user);
     }
     public class UserServices : IUserService
     {
@@ -34,15 +37,48 @@ namespace STEM.Services
         }
         public Guid RegisterUser(User user)
         {
-            if (_context.User.Where(e => e.Email == user.Email).Any())
+            if (_context.User.Where(e => e.MobileNo == user.Email || e.MobileNo == user.MobileNo).Any())
             {
-                throw new KeyNotFoundException("The User with this email already exists");
+                throw new KeyNotFoundException("This User already exists, Please log in");
             }
             //User.Password = BCrypt.Net.BCrypt.HashPassword(User.Password, "ThisWillBeAGoodPlatformForBothUsersAndTuteesToConnectOnADailyBa5e5");
             user.UserId = Guid.NewGuid();
             _context.User.Add(user);
             _context.SaveChanges();
             return user.UserId;
+        }
+
+        public User UpdateUser(User user)
+        {
+            
+            try
+            {
+                var updateUser = _context.User.FirstOrDefault(e=> e.UserId == user.UserId);
+                if (updateUser != null)
+                {
+                    updateUser.Grade = user.Grade;
+                    updateUser.Name = user.Name;
+                    updateUser.Surname = user.Surname;
+                    updateUser.Email = user.Email;
+                    updateUser.MobileNo = user.MobileNo;
+                    updateUser.Grade = user.Grade;
+                    updateUser.SchoolId = user.SchoolId;
+                    updateUser.UserTypeId = user.UserTypeId;
+                    updateUser.Password = user.Password;
+
+                    _context.SaveChanges();
+                    return _context.User.FirstOrDefault(e => e.UserId == user.UserId);
+                }
+                else { 
+                    throw new Exception("User not found");
+                }
+                
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+            
         }
     }
 }
