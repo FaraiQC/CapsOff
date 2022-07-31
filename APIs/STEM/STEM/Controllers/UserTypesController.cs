@@ -29,7 +29,7 @@ namespace STEM.Controllers
         [HttpPost("userType")]
         public IActionResult AddUserType(UserType type) {
             var result = userTypeService.AddUserType(type);
-            return Ok(result);
+            return Ok(result);   
         }
     }
 }
