@@ -200,3 +200,7 @@ body{
   justify-content: center;
   text-align: center;
 }
+
+.green{
+  color: rgba(0, 194, 43, 0.88);
+}
