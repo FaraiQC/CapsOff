@@ -40,5 +40,23 @@ namespace STEM.Controllers
             var userId = userService.RegisterUser(user);
             return Ok(userId);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateUser(Guid id, User user)
+        {
+            if (id != user.UserId)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                var returnedUser = userService.UpdateUser(user);
+                return Ok(returnedUser);
+            }
+            catch(Exception e)
+            {
+                return Conflict(e.Message);
+            }
+        }
     }
 }

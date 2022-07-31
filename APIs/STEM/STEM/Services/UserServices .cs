@@ -1,4 +1,5 @@
-﻿using STEM.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using STEM.Data;
 using STEM.Models;
 
 namespace STEM.Services
@@ -8,6 +9,8 @@ namespace STEM.Services
         IEnumerable<User> GetAllUsers();
         User GetUserById(Guid id);
         Guid RegisterUser(User user);
+
+        User UpdateUser(User user);
     }
     public class UserServices : IUserService
     {
@@ -43,6 +46,39 @@ namespace STEM.Services
             _context.User.Add(user);
             _context.SaveChanges();
             return user.UserId;
+        }
+
+        public User UpdateUser(User user)
+        {
+            
+            try
+            {
+                var updateUser = _context.User.FirstOrDefault(e=> e.UserId == user.UserId);
+                if (updateUser != null)
+                {
+                    updateUser.Grade = user.Grade;
+                    updateUser.Name = user.Name;
+                    updateUser.Surname = user.Surname;
+                    updateUser.Email = user.Email;
+                    updateUser.MobileNo = user.MobileNo;
+                    updateUser.Grade = user.Grade;
+                    updateUser.SchoolId = user.SchoolId;
+                    updateUser.UserTypeId = user.UserTypeId;
+                    updateUser.Password = user.Password;
+
+                    _context.SaveChanges();
+                    return _context.User.FirstOrDefault(e => e.UserId == user.UserId);
+                }
+                else { 
+                    throw new Exception("User not found");
+                }
+                
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+            
         }
     }
 }
