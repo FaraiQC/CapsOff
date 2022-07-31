@@ -99,6 +99,7 @@ body{
 
     .quizTab{
         width: 70%;
+        height: 530px;
         background-color: #2E3972;
         align-items: center;
         text-align: center;
@@ -109,7 +110,7 @@ body{
 
     .form{
         width: 65%;
-        height:180px;
+        height:230px;
         background-color: #2E3972;
         margin-left: 14%;
         padding-top: 2%;
@@ -148,4 +149,44 @@ body{
     .instruction{
       color: #fff;
       font-size: 20px;
+    }
+
+    .row{
+        display:flex ;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .greenTick{
+        color: #39fc03;
+        margin-right: 2%;
+        margin-left: 10%;
+    }
+
+    .greenText{
+        color: #39fc03;
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 10%;
+        margin-right: 2%;
+        flex-direction: row;
+    }
+
+    .normalWhiteText{
+       font-size: 16px;
+       flex-direction: row;
+    }
+
+    .nextButton{
+      padding: 2%;
+      background-color: #FFB800;
+      color: #000;
+      font-size: 20px;
+      width: 20%;
+      font-weight: bold;
+      height: 20px;
+      margin-left: 38%;
+      text-align: center;
+      align-items: center;
+
     }
