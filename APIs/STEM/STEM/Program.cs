@@ -21,6 +21,8 @@ builder.Services.AddDbContext<STEM.Data.STEMContext>(
         options.UseSqlServer(builder.Configuration.GetConnectionString("StemDB"));
     }
 );
+
+builder.Services.AddCors();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,3 +39,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+public partial class Program { }

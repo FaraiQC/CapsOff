@@ -144,3 +144,8 @@ body{
         background-color: #FFB800;
         font-weight: bold;
     }
+
+    .instruction{
+      color: #fff;
+      font-size: 20px;
+    }

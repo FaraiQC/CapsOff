@@ -1,5 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/home/simphiwe/.cache/JetBrains/Rider2022.1/resharper-host/temp/Rider/vAny/CoverageData/_STEM.584096835/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=172999fc_002Da212_002D48fb_002Da1b2_002Df5dfaffc1e50/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetUserById_UserId_ReturnsUserOfId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::95332DA5-7EA3-439E-BCC7-2356FA8B8C72::net6.0::Tests.UnitTests.UserControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95332DA5-7EA3-439E-BCC7-2356FA8B8C72::net6.0::Tests.IntegrationTests.UserControllerIntegrationTests+UserControllerTests.GetAllUsers_Users&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95332DA5-7EA3-439E-BCC7-2356FA8B8C72::net6.0::Tests.IntegrationTests.UserControllerIntegrationTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=78966c3f_002Ddcb0_002D4b99_002D843f_002D2abd0bd1c50c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Login_User_ReturnsUser" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
