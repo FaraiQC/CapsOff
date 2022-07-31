@@ -22,7 +22,7 @@ namespace STEM.Controllers
         }
 
         
-        [HttpPost]
+        [HttpPost("/login")]
         public IActionResult LogInUser(UserLogIn userDetails)
         {
             try
