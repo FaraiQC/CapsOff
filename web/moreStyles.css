@@ -51,6 +51,7 @@ body{
     float: left;
   }
 
+
   #navName{
     float: left;
     color: #2E3972;
@@ -199,4 +200,8 @@ body{
 .col-lg-6, .col-sm-6, .col-sm-2{
   justify-content: center;
   text-align: center;
+}
+
+.green{
+  color: rgba(0, 194, 43, 0.88);
 }
