@@ -1,5 +1,6 @@
 <h1 align="center"> CapsOff </h1>
 <h1 align="center"> Education Hackathon EPF </h1>
+<h1 align="center"> 🏆🥈2nd Place🥈🏆 </h1>
 
 ## Team Members
 ### [Kudakwashe Chivunga](https://github.com/Kuda214)(team lead) 
@@ -9,5 +10,4 @@
 ### [Simphiwe Ndlovu](https://github.com/SimphiweNdlovu)
 ### [Thabo Maduna](https://github.com/MadunaThabo)
 ### [Musa Mabasa](https://github.com/Musa-Mabasa)
-### [Bongeka Caluza]()
 
