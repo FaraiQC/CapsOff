@@ -45,3 +45,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/APIs/STEM/STEM/bin/Debug/net6.0/STEM.dll
+/APIs/STEM/STEM/bin/Debug/net6.0/STEM.pdb
+/APIs/STEM/STEM/obj/Debug/net6.0/STEM.csproj.CoreCompileInputs.cache
+/APIs/STEM/STEM/obj/Debug/net6.0/STEM.dll
+/APIs/STEM/STEM/obj/Debug/net6.0/STEM.pdb
+/APIs/STEM/STEM/obj/Debug/net6.0/project.razor.json
+/APIs/STEM/STEM/obj/staticwebassets.pack.sentinel
