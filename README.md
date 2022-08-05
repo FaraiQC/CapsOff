@@ -2,6 +2,10 @@
 <h1 align="center"> Education Hackathon EPF </h1>
 <h1 align="center"> 🏆🥈2nd Place🥈🏆 </h1>
 
+<p align="center"> 
+	<img alt="Team Photo" src="https://github.com/FaraiQC/CapsOff/blob/develop/FC.png" width="600" height="400">
+</p>
+
 ## Team Members
 ### [Kudakwashe Chivunga](https://github.com/Kuda214)(team lead) 
 ### [Farai Chivunga](https://github.com/FaraiQC) (deputy)
