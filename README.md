@@ -1,6 +1,7 @@
 <h1 align="center"> CapsOff </h1>
 <h1 align="center"> Education Hackathon EPF </h1>
 <h1 align="center"> 🏆🥈2nd Place🥈🏆 </h1>
+<h1 align='center'> R10 000 </h1>
 
 <p align="center"> 
 	<img alt="Team Photo" src="https://github.com/FaraiQC/CapsOff/blob/develop/FC.png" width="600" height="400">
